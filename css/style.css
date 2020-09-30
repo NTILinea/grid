@@ -22,3 +22,84 @@ span {
     background-color: rgb(255,232,123);
     
 }
+
+.gridWrapper {
+    height: 100vh;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+background: rgb(173, 216, 230);
+    grid-template-areas:
+    " hd hd hd hd hd " 
+    " nv nv nv nv as " 
+    " a1 a1 a1 a1 as "
+    " a2 a2 a2 a2 as "
+    " a3 a3 a4 a4 as "
+    " a4 a5 a5 a6 as "
+    " fo fo fo fo fo " 
+
+
+    
+    ;
+}
+
+.header {
+    grid-area: hd;
+    background: salmon;
+}
+
+.nav {
+    grid-area: nv;
+background: crimson ;
+}
+
+.article1{
+    grid-area: a1;
+    background: lime;
+}
+.article2{
+    grid-area: a2;
+    background: cyan;
+}
+.article3{
+    grid-area: a3;
+    background: rosybrown;
+}
+.article4{
+    grid-area: a4;
+    background: seagreen;
+}
+.article5{
+    grid-area: a5;
+    background: aqua;
+}
+.article6{
+    grid-area: a6;
+    background: purple;
+}
+.article7{
+    grid-area: a7;
+    background: aquamarine;
+}
+.article8{
+    grid-area: a8;
+    background:red ;
+}
+.aside {
+    grid-area: as;
+    background:orange;
+
+}
+.footer {
+    grid-area: fo;
+    background: indigo ;
+}
+
+
+
+
+
+.innerGridWrapper {
+    grid-area: dv;
+    background: darkgreen;
+}
