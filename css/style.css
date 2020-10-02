@@ -1,4 +1,14 @@
 /* Denna fil skall innehålla din CSS kod */
+* {
+    margin: 0;
+}
+
+h5 {font-family: sans-serif;
+margin: 3px;
+font-size: large;
+}
+
+
 body {
     background-color:rgb(168, 47, 255);
 }
@@ -26,21 +36,19 @@ span {
 .gridWrapper {
     height: 100vh;
 display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 background: rgb(173, 216, 230);
     grid-template-areas:
     " hd hd hd hd hd " 
     " nv nv nv nv as " 
     " a1 a1 a1 a1 as "
-    " a2 a2 a2 a2 as "
-    " a3 a3 a4 a4 as "
-    " a4 a5 a5 a6 as "
-    " fo fo fo fo fo " 
-
-
-    
-    ;
+    " a2 a2 a3 a3 as "
+    " a4 a5 se a6 as "
+    " a7 a7 a7 a7 as " 
+    " a8 a8 a8 a8 as "
+    " fo fo fo fo fo " ;
+    grid-gap: 2px;
 }
 
 .header {
@@ -71,7 +79,7 @@ background: crimson ;
 }
 .article5{
     grid-area: a5;
-    background: aqua;
+    background: fuchsia;
 }
 .article6{
     grid-area: a6;
@@ -100,6 +108,15 @@ background: crimson ;
 
 
 .innerGridWrapper {
-    grid-area: dv;
-    background: darkgreen;
+    grid-area: se;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2px;
+    
+    ;
+}
+
+.innerdiv {
+    background: forestgreen;
 }
